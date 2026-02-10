@@ -13,6 +13,7 @@ def count_digits(n):
 import math
 
 def count_digits_log(n):
+    n = abs(n) 
     if n == 0:
         return 1
     return int(math.log10(n)) + 1
