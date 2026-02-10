@@ -16,7 +16,7 @@ def count_digits_log(n):
     if n == 0:
         return 1
     return int(math.log10(n)) + 1
-
+ 
 
 # The count of digits can be calculated using log10 N + 1.
 # log10 N operation gives the logarithmic base 10 of which returns the power to which 10 must be raised to, to be equal to N.
