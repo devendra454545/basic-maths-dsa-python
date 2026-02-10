@@ -8,6 +8,17 @@ def count_digits(n):
         n = n // 10
     return count
 
-print (count_digits(-6666))
-print (count_digits(0))
-print (count_digits(16))
+# OR
+
+import math
+
+def count_digits_log(n):
+    if n == 0:
+        return 1
+    return int(math.log10(n)) + 1
+
+
+# The count of digits can be calculated using log10 N + 1.
+# log10 N operation gives the logarithmic base 10 of which returns the power to which 10 must be raised to, to be equal to N.
+# We add 1 to the result which accounts for the possibility that N itself is a power of 10.
+# Financially cast the result to an integer to ensure that it is rounded down to the nearest whole number.
