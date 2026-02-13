@@ -14,3 +14,9 @@ if isPrime:
     print(f"{n} is a prime number.")
 else:
     print(f"{n} is not a prime number.")
+
+# Complexity Analysis
+
+# Time Complexity: O(N), as we iterate from 1 to N performing constant-time operation for each iteration.
+
+# Space Complexity : O(1), as the space used by the algorithm does not increase with the size of the input.
