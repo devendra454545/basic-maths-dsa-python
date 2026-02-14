@@ -9,11 +9,13 @@ def armstrong(n):
         n = n//10
     return total == temp
 
-print(armstrong(153))
+print(armstrong(153)) # tells that a number is armstrong or not
 
+
+# code to print all armstrong numbers and count of them
 count=0
-for i in range(1,1001):
+for i in range(1,1001): #to print all armstrong numbers from 1 to 1000
     if(armstrong(i)):
         print(f"{i} is armstrong")
         count +=1
-print(count)
+print(count) #prints number of armstrong numbers
